@@ -22,6 +22,17 @@
   - `src/App.vue`, `src/main.js`
 - `init.sql` (estructura de la tabla `schedules`)
 
+## URLs del proyecto
+
+```bash
+- Frontend: http://localhost:5173/
+- API: http://localhost:8000/api/schedules
+```
+
 ## Levantar el proyecto
 ```bash
 docker compose up --build
+```
+
+
+
