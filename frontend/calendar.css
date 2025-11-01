@@ -1,0 +1,65 @@
+.calendar-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 10px;
+  background: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+.fc {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  height: fit-content !important;
+}
+
+.fc .fc-timeline-slot-label {
+  font-weight: bold;
+}
+
+.fc .fc-resource-area td {
+  height: 50px !important;
+}
+
+.fc .fc-resource-area .fc-resource-cell {
+  font-weight: bold;
+  text-align: center;
+}
+
+.fc .fc-highlight {
+  background-color: rgba(55, 136, 216, 0.7) !important;
+}
+
+.fc-timeline-event {
+  background-color: #3788d8 !important;
+  border-color: #3788d8 !important;
+  color: white !important;
+  
+}
+
+.fc .fc-event {
+  cursor: pointer;
+}
+
+
+.fc-highlight {
+  position: relative;
+  z-index: 1;
+}
+
+.fc-highlight::after {
+  content: attr(data-time);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2c5282;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  white-space: nowrap;
+  z-index: 2;
+}
